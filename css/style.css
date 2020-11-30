@@ -1,0 +1,166 @@
+ html, body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #vmap {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(51, 51, 51);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+      }
+      #vmap path {
+        transition: fill 0.2s, stroke 0.3s;
+      }
+#type_coloration {
+	border-radius: 14px;
+}
+#div_select{
+	position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 0;
+    z-index: 99;
+    right: 8px;
+}
+      .bold{
+        font-weight: 500;
+      }
+      .s-bold {
+        font-weight: 600;
+      }
+      .map-details {
+        min-width: 150px;
+        background: #fff;
+        color: #000;
+        min-height: 60px;
+        text-align: center;
+        border-radius: 24px;
+        padding: 8px;
+        font-size:14px;
+      }
+      .emoji {
+        font-size: 34px;
+      }
+      .nom-departement {
+        font-size: 16px;
+        margin-top:6px;
+      }
+      .classement {
+        margin: 8px 0 4px 0;
+        
+      }
+      .left{
+        text-align: left;
+      }
+      .italic{
+        font-style: italic;
+      }
+      .ml-30{
+        margin-left:14px;
+      }
+      .btn-detail,#close_view_more{
+        margin-top: 8px;
+        background-color: #499a9a;
+        border: none;
+        color: #fff;
+        padding: 5px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px 0 rgba(95,186,233,.4);
+      }
+		
+		#close_view_more {
+			margin-top: 0;
+			padding: 5px 10px;
+			margin-left: auto;
+			position: absolute;
+    		right: 8px;
+			box-shadow: 0 0px 10px 0 rgba(95,186,233,.4);
+		}
+      /* Reposition Labels that are not quite right ( labels are centered in shape, and sometimes need tweaking ) */
+	  
+      #jqvmap1_fl_pin {
+        margin-left: 5%;
+      }
+      .jqvmap-label{
+        border-radius: 24px;
+        background: #3a7777;
+        padding: 4px;
+      }
+		#view_more {
+			position: absolute;
+			right: 8px;
+			background: #fff;
+			height: 0px;
+			width: 250px;
+			top: calc(50% - 125px);
+			border-radius: 20px;
+       		 box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+			overflow: hidden;
+			 transition: height 0.2s;
+			text-align: center;
+		}
+		#view_more.open {
+			height: 250px;
+			overflow: none;
+			text-align: left;
+			
+		}
+.w-100{
+	width: 100%;
+}
+#view_more:not(.open) ~ .nicescroll-rails{
+	display: none!important;
+}
+		#view_more .header{
+			height: 0px;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    		padding: 0px;
+			position: fixed;
+			top: calc(50% - 125px);
+			background: #fff;
+			width: 235px;
+			overflow: hidden;
+			z-index: 1;
+			border-radius: 24px;
+		}
+		.loader{
+			height: 100px;
+			width: 160px;
+			margin-top: 2px;
+    		border-radius: 16px;
+		}
+select:focus,select:active,select:checked,select {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px #499a9a;
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #0B0B0B;
+	outline: none;
+}
+		#view_more.open .header{
+			height: 30px;
+			padding: 8px;
+			
+		}
+		#view_more .header span{
+			line-height: 28px;
+		}
+		#view_more .content{
+			padding: 10px;
+			margin-top: 44px;
+		}
+		.center{
+			text-align: center;
+		}
+		#view_more .content div div:not(.titre){
+			margin-left: 8px;
+		}
+		#view_more .content .titre {
+			margin: 8px 0;
+		}
